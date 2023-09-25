@@ -1,0 +1,211 @@
+html, body {
+  height: 100%;
+	font-family: Arial, Helvetica, Sans-serif;
+}
+
+body {
+  margin: 10px;
+  width: auto;
+}
+header{
+  font-style: italic;
+  font-size: 12px;
+  font-stretch: wider;
+}
+h1{
+  margin: 10px 0px;
+  padding: 0px;
+}
+
+h2{
+  margin: 0px;
+  padding: 0px;
+  line-height: 1em;
+}
+
+h3{
+  margin: 10px 0px 0px 0px;
+  padding: 0px;
+}
+p{
+  margin: 7px;
+  padding: 3px;
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  position: relative; /* This is the container that will hold the centered div */
+  height: 100%;
+  width: 100%;
+}
+
+.centered {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* height: 100%; */
+  transform: translate(-50%, -50%); /* Translate the div by half its width and height */
+}
+.title h1 {
+	font-family: 'Dancing Script', cursive;
+	font-weight: bolder;
+	font-style: normal;
+	font-size: 35px;
+	color: #0c4200;
+	margin: 16px;
+	text-align: center;
+}
+.title h2 {
+  font-family: 'Dancing Script', cursive;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 35px;
+  color: #150042;
+}
+.title h3 {
+  font-family: 'Dancing Script', cursive;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 30px;
+  color: #0c4200;
+	text-align: center;
+}
+.details p{
+  font-size: 12px;
+}
+
+.bride-groom {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+}
+.bride-groom .separator{    
+  display: flex;    
+  font-size: 50px;
+  line-height: 50px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.groom{
+  width: 45%;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bride-groom .groom .pic{    
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.groom img{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  position: relative;
+  background: var(--secondary-clr);
+  z-index: 2;
+}
+.bride-groom .groom .details{
+  width: 100%;
+  text-align: center;
+}
+.bride{
+  width: 45%;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bride-groom .bride .pic{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bride img{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  position: relative;
+  background: var(--secondary-clr);
+  z-index: 2;
+}
+.bride-groom .bride .details{
+  width: 100%;
+  text-align: center;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 550px) {
+  .centered {
+    width: 100%;
+  }
+}
+@media screen and (max-height: 850px) {
+  .centered {
+    height: 100%;
+  }
+}
+@media screen and (max-width: 300px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.row h2 {
+  color: #150042;
+  font-size: 18px;
+}
+
+#time {
+  display: flex;
+  justify-content: center;
+	width: auto;
+	height: auto;
+	font-size: 14px;
+  font-weight: bold; 
+  color: #423600;
+  margin-top: 15px;
+}
+
+.tc{
+  margin: 0px 5px;
+}
+
+.action {
+	width: auto;
+	height: auto;
+	background-color: #150042;
+	border-radius: 16px;
+	text-align: center;
+	color: #fff;
+	padding: 5px;
+  font-size: 12px;
+}
+
+.action a {
+	text-decoration: none;
+	color: #fff;
+}
+footer {
+  margin-top: 25px;
+}
