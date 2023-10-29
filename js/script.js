@@ -1,10 +1,5 @@
-$(document).on('click', function () {
-  // playStream();
-  document.getElementById("my_audio").play();
-});
-
 // date
-var countDownDate = new Date("Nov 5, 2023 11:00:00").getTime();
+var countDownDate = new Date("Nov 5, 2023 10:00:00").getTime();
 
 // count down
 var x = setInterval(function () {
@@ -28,32 +23,3 @@ var x = setInterval(function () {
     document.getElementById("time").innerHTML = "Bless the married couple for happy life!";
   }
 }, 1000);
-
-
-function playStream() {
-  var player = document.getElementById('my_audio');
-  (player.paused == true) ? toggle(0) : toggle(1);
-}
-
-function toggle(state) {
-  var player = document.getElementById('my_audio');
-  var link = document.getElementById('audio_link');
-  var src = "./audio/song.mp3";
-
-  switch (state) {
-    case 0:
-      player.src = src;
-      player.load();
-      player.play();
-      link.innerHTML = 'Pause';
-      player_state = 1;
-      break;
-    case 1:
-      player.pause();
-      // player.currentTime = 0;
-      player.src = '';
-      link.innerHTML = 'Play';
-      player_state = 0;
-      break;
-  }
-}

@@ -42,7 +42,7 @@ a {
   width: 60%;
   height: 100%;
   /* background-color: bisque; */
-  background-image: url('../img/left-bg.jpeg');
+  background-image: url('../img/gebyok-50.PNG');
   background-size: cover;
   /* background-size: contain; */
   background-repeat: no-repeat;
@@ -53,7 +53,7 @@ a {
   height: 100%;
   /* background-color: aquamarine; */
 }
-#right .bg-img{
+.bg-img{
   display: none;
 }
 .centered {
@@ -85,7 +85,7 @@ a {
   font-family: 'Dancing Script', cursive;
   font-weight: bold;
   font-style: normal;
-  font-size: 30px;
+  font-size: 27px;
   color: #0c4200;
 	text-align: center;
 }
@@ -172,6 +172,10 @@ a {
   width: 50%;
 }
 
+.row {
+  margin-top: 25px;
+}
+
 .row:after {
   content: "";
   display: table;
@@ -200,17 +204,16 @@ a {
   }
   #right{
     width: 100%;
-    /* background-image: url('../img/left-bg.jpeg'); */
-    /* background-size: cover; */
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
-  #right .bg-img{
+  .bg-img{
     display: block;
-    opacity: 0.5;
-    max-width: 100%;
-    height: auto;
+    max-height: 30%;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
   .centered{
     top: 50%;
@@ -265,6 +268,15 @@ a {
 	text-decoration: none;
 	color: #fff;
 }
-footer {
+#dua p{
+  padding: 0;
+  margin: 0;
+}
+#dua .trans {
+  font-style: italic;
+  font-size: 12px;
+  font-stretch: wider;
+}
+footer, #dua{
   margin-top: 25px;
 }
